@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Tony Luo</title>
@@ -10,6 +12,14 @@
 </head>
 
 <body class="container lg:text-xl lg:max-w-screen-lg lg:mx-auto">
+  <!-- Artist Profile -->
+  <section id="profile">
+    <div class="container mx-auto px-4 py-8 lg:pt-12 lg:pb-24 text-center">
+      <img class="h-32 md:h-48 mx-auto mb-3 rounded-full flex justify-center items-center" src="assets/profile.jpg" alt="avatar" />
+      <h2 class="text-4xl font-bold mb-2">About the author</h2>
+      <h3 class="text-xl mb-4">My name is Tony Luo.</h3>
+    </div>
+  </section>
   <!-- works -->
   <section id="works">
     <div class="container mx-auto px-4 py-8 md:pt-24 md:pb-12 flex flex-wrap justify-center items-center">
@@ -61,28 +71,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Artist Profile -->
-  <section id="profile">
-    <div class="container mx-auto px-4 py-8 lg:pt-12 lg:pb-24 text-center">
-      <img class="h-32 md:h-48 mx-auto mb-3 rounded-full flex justify-center items-center" src="assets/profile.jpg" alt="avatar" />
-      <h2 class="text-4xl font-bold mb-2">Tony Luo</h2>
-      <h3 class="text-xl mb-4">Coming ...</h3>
-      <!--
-      <!-- Socials commented out for now -->
-      <div class="flex flex-wrap justify-center pt-8 pb-4">
-        <div class="w-16 h-16 flex justify-center items-center mx-4 border border-gray-400 rounded-full hover:border-blue-400 hover:text-blue-400">
-          <a href="https://facebook.com/[your username]" target="_blank"><i class="fa fa-facebook fa-2x pt-2 pr-1"></i></a>
-        </div>
-        <div class="w-16 h-16 flex justify-center items-center mx-4 border border-gray-400 rounded-full hover:border-blue-400 hover:text-blue-400">
-          <a href="https://twitter.com/[your username]" target="_blank"><i class="fa fa-twitter fa-2x pt-1"></i></a>
-        </div>
-        <div class="w-16 h-16 flex justify-center items-center mx-4 border border-gray-400 rounded-full hover:border-blue-400 hover:text-blue-400">
-          <a href="https://instagram.com/[your username]" target="_blank"><i class="fa fa-instagram fa-2x pt-1"></i></a>
-        </div>
-      </div>
-      -->
     </div>
   </section>
   <!-- Footer -->
