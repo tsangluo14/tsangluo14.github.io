@@ -39,11 +39,29 @@ header, nav {
   display: block;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .image-card img {
     object-fit: cover;
     width: 450px;
     height: 350px;
+  }
+}*/
+
+/* Styles for Landscape Mode (Phone turned sideways) */
+@media (orientation: landscape) {
+  .image-card img {
+    object-fit: cover;
+    max-height: 90vh; /* Prevents the image from being taller than the screen */
+    width: auto;      /* Keeps the width proportional */
+  }
+}
+
+/* Styles for Portrait Mode (Normal hold) */
+@media (orientation: portrait) {
+  .image-card img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
   }
 }
 
